@@ -1,0 +1,5 @@
+@opengsn/=node_modules/@opengsn/
+@openzeppelin/=node_modules/@openzeppelin/
+forge-std/=lib/forge-std/src/
+solmate/=lib/solmate/src/
+@uniswap/=lib/v2-periphery/contracts/

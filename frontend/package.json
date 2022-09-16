@@ -1,0 +1,25 @@
+{
+  "name": "nogastran",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "watch": {
+    "build": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "del bundle.js && browserify ./index.js -o  ./bundle.js",
+    "watch": "npm-watch build",
+    "dev2": "npm run build && npx serve ./ -p 8080",
+    "dev": "npm run build && live-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@opengsn/provider": "^2.2.5",
+    "ethers": "^5.7.0",
+    "live-server": "^1.2.2",
+    "npm-watch": "^0.11.0",
+    "serve": "^14.0.1"
+  }
+}
